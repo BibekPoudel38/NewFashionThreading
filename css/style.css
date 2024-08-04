@@ -1315,3 +1315,85 @@ a:focus {
     margin: 0 0 30px;
   }
 }
+
+.banner {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  /* Gradient background */
+  color: #ffffff;
+  /* Text color */
+  text-align: center;
+  /* Center the text */
+  padding: 20px;
+  /* Padding around the text */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  margin: 20px 0;
+  /* Margin around the banner */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* Smooth transitions */
+}
+
+.banner:hover {
+  transform: translateY(-4px);
+  /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Stronger shadow on hover */
+}
+
+.banner h2 {
+  font-size: 2em;
+  /* Large font size */
+  margin: 0 0 10px 0;
+  /* Remove default margin and add bottom margin */
+  font-family: 'Arial', sans-serif;
+  /* Font style */
+}
+
+.banner p {
+  font-size: 1.2em;
+  /* Font size for paragraph */
+  margin: 0;
+  /* Remove default margin */
+  font-family: 'Arial', sans-serif;
+  /* Font style */
+}
+
+.banner a {
+  color: #ffffff;
+  /* Link color */
+  text-decoration: underline;
+  /* Underline link */
+  transition: color 0.3s;
+  /* Smooth transition for link color */
+}
+
+.banner a:hover {
+  color: #ffd700;
+  /* Change link color on hover */
+}
+
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 1.5em;
+    /* Adjust font size for smaller screens */
+  }
+
+  .banner p {
+    font-size: 1em;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h2 {
+    font-size: 1.2em;
+    /* Adjust font size for very small screens */
+  }
+
+  .banner p {
+    font-size: 0.9em;
+    /* Adjust font size for very small screens */
+  }
+}
